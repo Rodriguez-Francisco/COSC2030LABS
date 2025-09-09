@@ -1,0 +1,1 @@
+# COSC2030LABS initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin git@github.com:Rodriguez-Francisco/COSC2030LABS.gitgit push -u origin main
