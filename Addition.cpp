@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
     }
     
     cout<<Addup(nums, char_num)<<"\n\n";
-  //cout<<atoi(argv[0])<<endl;
+    //cout<<atoi(argv[0])<<endl;
   //cout<<atoi(argv[1])<<endl;
   //cout<atoi(argv[2])<<"\n\n";
 }
