@@ -1,1 +1,6 @@
-//Practice lab
+//Practice labs
+#include <iostream>
+using std namespace;
+
+
+
