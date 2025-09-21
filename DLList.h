@@ -2,7 +2,8 @@
 UWYO COSC2030
 Graded lab 2
 */
-#pragma once
+#ifndef __DLLLIST_H__
+#define __DLLLIST_H__
 #include <iostream>
 using namespace std;
 
@@ -20,8 +21,8 @@ class DLL{
 
 public:
     DLL();
-    void insertAtHead(node*);
-    void insertAttail(node*);
+    void insertAtHead(Node*);
+    void insertAtTail(Node*);
 
     void deleteAtHead();
     void deleteAtTail();
@@ -30,3 +31,4 @@ public:
 
 
 };
+#endif

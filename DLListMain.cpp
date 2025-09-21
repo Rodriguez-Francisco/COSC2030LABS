@@ -8,8 +8,8 @@ int main(){
     int choice;
     int item;
     DLL* L =new DLL();
-    node*x;
-    char space ="--------------------------_-\n"
+    Node*x;
+    const string space ="--------------------------_-\n";
     
     do{
         cout<<space;
@@ -58,7 +58,7 @@ int main(){
 
         case 5:
             L->traverse();
-                break;
+            break;
 
         case 6:
             break;
@@ -72,8 +72,7 @@ int main(){
     
 
     delete L;
-    return 0:
+    return 0;
 
 
     }
-}

@@ -11,10 +11,10 @@ DLL::DLL(){
 }
 
 
-void DLL:insertAtHead(node* x){
+void DLL::insertAtHead(Node* x){
 x->prev=nullptr;
 x->next= head;
-if (head == nullptr!){
+if (head != nullptr){
     head-> prev =x;
 
 }else{
@@ -23,10 +23,10 @@ if (head == nullptr!){
 head = x;
 }
 
-void DLL::insertAttail(node*x){
+void DLL::insertAtTail(Node* x){
 x->next=nullptr;
 x->prev= tail;
-if (tail == nullptr!){
+if (tail != nullptr){
     head-> next =x;
 
 }else{
@@ -37,13 +37,13 @@ tail = x;
 
 void DLL::deleteAtHead(){
     if(head==nullptr){
-        cout<<"Error list is empty\n\n"
+        cout<<"Error list is empty\n\n";
         return;
     }
-    node* temp =head;
+    Node* temp =head;
     head =head->next;
    
-    if (head== nullptr!){
+    if (head != nullptr){
         head->prev =nullptr;
 
     }
@@ -55,41 +55,40 @@ void DLL::deleteAtHead(){
     
 }
 
-void DLL::deleteAtHead(){
+void DLL::deleteAtTail(){
     if(tail==nullptr){
-        cout<<"Error list is empty\n\n"
+        cout<<"Error list is empty\n\n";
         return;
     }
-    node* temp =tail;
-    head =tail->prev;
+    Node* temp =tail;
+    tail =tail->prev;
    
-    if (head== nullptr!){
+    if (head != nullptr){
         tail->next =nullptr;
     }
     else{
         head=nullptr;
     }
-    delete temp;
+    delete temp;}
 void DLL::traverse(){
     if (head== nullptr){
-        cout<<"Couldnt traverse list empty\n"
+        cout<<"Couldnt traverse list empty\n";
         return;
     }
-    node*curr=head;
-    while(curr=nullptr!){
+    Node*curr=head;
+    while(curr !=nullptr){
         cout<<"{"<<curr->data<<"}";
-        curr = curr->
+        curr = curr->next;
     }
     cout<<"\n\n";
 }
-DLL::~DLL(){
-    node* curr=head;
-    while(curr==nullptr!){
-        node* temp=curr;
-        curr= curr->nextl
+DLL::~DLL() {
+    Node* curr=head;
+    while(curr !=nullptr){
+        Node* temp=curr;
+        curr= curr->next;
         delete temp;
     }
 }
 
     
-}
