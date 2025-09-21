@@ -2,6 +2,7 @@
 UWYO COSC2030
 Graded lab 2
 */
+#include "DLList.h"
 
 int main(){
     int choice;

@@ -3,7 +3,7 @@ UWYO COSC2030
 Graded lab 2
 */
 
-#include "DL-list.h"
+#include "DLList.h"
 
 DLL::DLL(){
     head= nullptr;
