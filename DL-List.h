@@ -3,6 +3,8 @@ UWYO COSC2030
 Graded lab 2
 */
 #pragma once
+#include <iostream>
+using namespace std;
 
 class Node{
 public:
@@ -18,8 +20,8 @@ class DLL{
 
 public:
     DLL();
-    void insertAtHead(int val);
-    void insertAttail(int val);
+    void insertAtHead(node*);
+    void insertAttail(node*);
 
     void deleteAtHead();
     void deleteAtTail();
