@@ -2,13 +2,24 @@
 UWYO COSC2030
 Graded lab 2
 */
+
 #include "TDLList.h"
+#include<iostream>
+#include<string>
+#ifndef ELEMENT_TYPE
+#define ELEMENT_TYPE int
+#endif
+
+using TTT = ELEMENT_TYPE;
+
+
 
 int main(){
+    
     int choice;
     TTT item;
-    DLL* L =new DLL();
-    Node*x;
+    TDLList<TTT>* L = new TDLList<TTT>();
+    
     const string space ="--------------------------_-\n";
     
     do{
@@ -27,27 +38,20 @@ int main(){
 
         
         switch (choice) {
-        case 1:
-            cout << "Enter the data item to  insert at head: ";
+        case 1:{
+              cout << "Enter the data item to insert at head: ";
             cin >> item;
-            x = new Node;
-            
-            x->data = item;
-            x->prev = nullptr;
-            x->next = nullptr;
+            Node<TTT>* x = new Node<TTT>(item);
             L->insertAtHead(x);
-                break;
+            break;
+        }
 
-        case 2:
-            cout << "Enter the data item  to inserted at tail: ";
+        case 2:{
+           cout << "Enter the data item to insert at tail: ";
             cin >> item;
-            x = new Node;
-           
-            x->data = item;
-            x->prev = nullptr;
-            x->next = nullptr;
+            Node<TTT>* x = new Node<TTT>(item);
             L->insertAtTail(x);
-                break;
+            break;}
 
         case 3:
             L->deleteAtHead();
