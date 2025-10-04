@@ -6,11 +6,11 @@ Graded lab 2
 #include "TDLList.h"
 #include<iostream>
 #include<string>
-#ifndef ELEMENT_TYPE
-#define ELEMENT_TYPE int
+#ifndef TTTYPE
+#define TTTYPE int
 #endif
 
-using TTT = ELEMENT_TYPE;
+using TTT = TTTYPE;
 
 
 
