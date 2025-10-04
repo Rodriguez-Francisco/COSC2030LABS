@@ -28,27 +28,18 @@ int main(){
         
         switch (choice) {
         case 1:
-            cout << "Enter the data item to  insert at head: ";
+           cout << "Enter the data item to insert at head: ";
             cin >> item;
-            x = new Node;
-            
-            x->data = item;
-            x->prev = nullptr;
-            x->next = nullptr;
+            x = new Node(item);         
             L->insertAtHead(x);
-                break;
+            break;
 
         case 2:
-            cout << "Enter the data item  to inserted at tail: ";
+            cout << "Enter the data item to insert at tail: ";
             cin >> item;
-            x = new Node;
-           
-            x->data = item;
-            x->prev = nullptr;
-            x->next = nullptr;
+            x = new Node(item);            
             L->insertAtTail(x);
-                break;
-
+            break;
         case 3:
             L->deleteAtHead();
                 break;

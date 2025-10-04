@@ -12,12 +12,14 @@ public:
     int data;
     Node* next;
     Node* prev;
+    Node(int value);
+    
 };
 
 class DLL{
     private:
     Node* head;
-    Node*tail;
+    Node* tail;
 
 public:
     DLL();
